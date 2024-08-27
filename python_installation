@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage("python installation") {
+            steps {
+                sh "sudo apt-get update"
+                sh "sudo apt-get install python3 python3-pip -y"
+            }
+        }
+        stage("python version") {
+            steps {
+                sh "pip --version"
+            }
+        }
+        
+    }
+}
