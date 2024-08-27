@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+        stage ('My Name') {
+            steps {
+            echo "Hi Hello This is my Name"
+            }
+        }
+         stage ('my wife') {
+            steps {
+            echo "Hi Hello This is my wife name"
+            }
+        }
+         stage ('my son') {
+            steps {
+            echo "Hi Hello This is my son name"
+            }
+        }
+         stage ('my daughter') {
+            steps {
+            echo "Hi Hello This is my daughter name"
+            }
+        }
+    }
+}
